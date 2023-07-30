@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace FastScriptReload.Tests.Runtime.Integration.CodePatterns
@@ -11,6 +12,7 @@ namespace FastScriptReload.Tests.Runtime.Integration.CodePatterns
             Value2 = 2
         }
 
+        [UsedImplicitly]
         private NestedEnum _value = MethodAccessingNestedEnum.NestedEnum.Value0;   
         
         public void AssignNestedEnumToField()
